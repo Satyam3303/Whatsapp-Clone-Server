@@ -11,7 +11,7 @@ const Connection = async()=>{
     const URL = `mongodb+srv://${USERNAME}:${PASSWORD}@whatsapp-clone.typhz4d.mongodb.net/?retryWrites=true&w=majority`;
     try{
         await mongoose.connect(URL, {useUnifiedTopology: true});
-        console.log("Databse connected");
+        console.log("Database connected");
     }
     catch(error){
         console.log(`Databse not connected ${error.message}`);
